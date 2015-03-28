@@ -1,0 +1,137 @@
+Initial Skill - randomise between 1 - 6 and add 6
+Initial Stamina - randomise between 2 - 12 and add 12
+Initial Luck - randomise between 1 - 6 and add 6
+
+Unless specified, initial levels can never be exceeded
+
+Provisions - start with 10; each restores 4 Stamina
+           - only one meal allowed per opportunity
+
+Potion - start with 2 doses of one of Skill, Stamina or Luck
+       - One dose restores up to initial; in addition, Luck adds 1 to initial
+       - may be taken at any time
+
+Equipment - sword
+          - leather armour
+          - backpack
+          - lantern
+          
+==============
+
+Display welcome page
+'Generate stats' button redirects to stats generation page
+...
+Upon return, display:
+- initial & current stat values
+- potion type and doses left (2 doses)
+- provisions count (start with 10)
+- gold count (start with 0)
+- items (start with sword, leather armour, backpack, lantern)
+'Rumours' shown on main text area, and 'Begin' button
+Clicking 'Begin' replaces rumour text with section 1
+~~~~~~
+Display current section in main text area
+If battle required
+	Display opponent's skill & stamina
+	Display 'begin battle' button
+	If escape allowed during battle
+		Display escape button
+	End-if
+	Perform battle process, updating stats accordingly
+	If player escapes
+		Dispay required new section
+	End-if
+	If battle won
+		Display required new section
+	End-if 
+	If battle lost
+		Display defeat page
+	End-if
+Else
+	Display buttons of available options
+	Display section of selected option
+End-if
+
+==============
+
+Set initial values for Skill, Stamina & Luck [triggered by button click]
+Set current values for Skill, Stamina & Luck to initial values
+
+* Battle
+Set opponent Skill
+Set opponent Stamina
+
+Determine opponent attack-strength (randomise between 2-12, and add to opponent Skill)
+Determine player attack-strength (randomise between 2-12, and add to player current Skill)
+
+While player current Stamina > 0 and opponent Stamina > 0 
+	If player attack-strength > opponent attack-strength
+		Subtract 2 from opponent Stamina
+		If opponent Stamina > 0
+			Offer player chance to test their luck
+			If player chooses to test their luck
+				Call Testing luck
+				If Lucky
+					Subtract 2 from opponent Stamina
+				Else
+					Add 1 to opponent Stamina
+				End-if
+				Subtract 1 from player current Luck
+			End-if
+		End-if
+	else-if player attack-strength < opponent attack-strength
+		Subtract 2 from player current Stamina
+		Offer player chance to test their luck
+		If player chooses to test their luck
+			Call Testing luck
+			If Lucky
+				Add 1 to player current Stamina
+			Else
+				Subtract 1 from player current Stamina
+			End-if
+			Subtract 1 from player current Luck
+		End-if
+	else
+		Nothing happens
+	End-if
+End-while
+
+* Testing luck
+Randomise a result between 2-12
+If result > player current Luck
+	Unucky
+else
+	Lucky
+End
+
+* Escape
+Subtract 2 from current Stamina
+Offer player chance to test their luck
+If player chooses to test their luck
+	Call Testing luck
+	If Lucky
+		Add 1 to current Stamina
+	Else
+		Subtract 1 from current Stamina
+	End-if
+	Subtract 1 from current Luck
+End-if
+
+* Eat provisions
+If (current Stamina + 4) <= Initial Stamina
+	Add 4 to current Stamina
+Else
+	Set current stamina = Initial Stamina
+End-if
+Subtract 1 from Provisions
+
+* Drink potion
+If Skill potion
+	Set current Skill = Initial Skill
+Else-if Stamina potion
+	Set current Stamina = Initial Stamina
+Else
+	Add 1 to Intial Luck
+	Set current Luck = Initial Luck
+End-if
+Subtract 1 from Potions

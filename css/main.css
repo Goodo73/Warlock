@@ -1,0 +1,111 @@
+
+.stat, .button, .main, .equipment, .skillRoll, .staminaRoll, .luckRoll, .skillTotal, .staminaTotal, .luckTotal {
+	border: 2px black solid;
+}
+
+h1 {
+	text-align: center;
+	padding: 10px;
+}
+
+.skillRoll, .staminaRoll, .luckRoll, .skillTotal, .staminaTotal, .luckTotal {
+	width: 10%;
+	padding: 10px 1%;
+	font-weight: bold;
+	display: inline-block;
+	text-align: center;
+}
+
+.stats {
+	text-align: center;
+	margin: 0 2% 20px;
+}
+
+.stat {
+	float: left;
+	height: 60px;
+	width: 30%;
+	margin-right: 5%;
+	margin-bottom: 5px;
+	background: yellow;
+	padding-top: 5px;
+}
+
+h2 {
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.potion, .luck {
+	margin-right: 0;
+}
+
+.main, .equipment {
+	padding: 10px 3%;
+	margin: 0 2% 20px;
+}
+
+.main p {
+	margin-bottom: 10px;
+}
+
+.statsGen, .potionSelect {
+	margin-bottom: 20px;
+}
+
+.button {
+	width: 40%;
+	padding: 10px 1%;
+	margin-bottom: 5px;
+	background: red;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.statsGen .button {
+	width: 25%;
+	display: inline-block;
+	margin-right: 2%;
+}
+
+.choices {
+	margin-top: 10px;
+}
+
+.go {
+	margin: 0 auto;
+	width: 75%;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+.inactive {
+	opacity: 0.3;
+	pointer-events: none;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*----------------------------------*/
+/* Clearfix for floats              */
+/*----------------------------------*/
+.cf:before,
+.cf:after {
+   content:"";
+   display:table;
+}
+.cf:after {
+   clear:both;
+}
+.cf {
+   zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
