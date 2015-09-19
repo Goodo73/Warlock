@@ -2,8 +2,9 @@
 <html lang="en-us">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Warlock of Firetop Mountain</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -17,30 +18,32 @@
 		<p>To see how effective your preparations have been, and how lucky you are, you must determine your initial Skill, Stamina and Luck scores.</p>
 		<p>Skill reflects your swordsmanship and general fighting expertise. Stamina reflects your general constitution, your will to survive, your determination and overall fitness. Luck indicates how naturally lucky a person you are.</p>
 		<p>Click the buttons to generate your scores:</p>
-		<div class="statsGen">
+
+		<div class="scores">
 			<div><span class="button skill">Skill</span><span class="skillRoll">?</span> + 6 = <span class="skillTotal">?</span></div>
 			<div><span class="button stamina">Stamina</span><span class="staminaRoll">?</span> + 12 = <span class="staminaTotal">?</span></div>
 			<div><span class="button luck">Luck</span><span class="luckRoll">?</span> + 6 = <span class="luckTotal">?</span></div>
 		</div>
+
 		<p>Choose a magical potion to aid you on your quest:</p>
 		<form class="potionSelect">
-			<input type="radio" name="potion" id="ptnSkil" value="Skill"> Skill [restores Skill points to their Initial value]
+			<input type="radio" name="potion" id="ptnSkil" value="Skill"> Skill ... restores Skill points to their Initial value
 			<br>
-			<input type="radio" name="potion" id="ptnStam" value="Strength"> Strength [restores Stamina points to their Initial value]
+			<input type="radio" name="potion" id="ptnStam" value="Strength"> Strength ... restores Stamina points to their Initial value
 			<br>
-			<input type="radio" name="potion" id="ptnFort" value="Fortune"> Fortune [restores Luck points to their Initial value AND adds 1 to the Initial value]
+			<input type="radio" name="potion" id="ptnFort" value="Fortune"> Fortune ... restores Luck points to their Initial value AND adds 1 to the Initial value
 		</form>
+
 		<a href="main.html" class="button go">Begin your adventure!</a>
 <!--		<p>Your Skill, Stamina and Luck scores will change constantly during an adventure. Although you may be awarded additional points for each, these totals may never exceed your initial scores (except when instructed to do so).</p> -->
 	</section>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<footer>
+		
+	</footer>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/index.js"></script>
-
-</body>
-</html>
-
-
 
 </body>
 </html>

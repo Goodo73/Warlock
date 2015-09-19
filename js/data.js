@@ -29,7 +29,7 @@ var page = [
 				text: "Begin your adventure"
 			}
 		],
-		mandatoryAction = ""
+		mandatoryAction: ""
 	},
 	{
 		text: "At last your two-day hike is over. You unsheathe your sword, lay it on the ground and sigh with relief as you lower yourself down on to the mossy rocks to sit for a moment's rest. You stretch, rub your eyes and finally look up at Firetop Mountain.||The very mountain itself looks menacing. The steep face in front of you looks to have been savaged by the claws of some gargantuan beast. Sharp, rocky crags jut out at unnatural angles. At the top of the mountain you can see the eerie red colouring - probably some strange vegetation - which has given the mountain its name. Perhaps no one will ever know exactly what grows up there, as climbing the peak must surely be impossible.||Your quest lies ahead of you. Across the clearing is a dark cave entrance. You pick up your sword, get to your feet and consider what dangers may lie ahead of you. But with determination, you thrust the sword home into its scabbard and approach the cave.||You peer into the gloom to see dark, slimy walls with pools of water on the stone floor in front of you. The air is cold and dank. You light your lantern and step warily into the blackness. Cobwebs brush your face and you hear the scurrying of tiny feet: rats, most likely. You set off into the cave. After a few yards you arrive at a junction.",
@@ -44,7 +44,7 @@ var page = [
 				text: "Turn east"
 			}
 		],
-		mandatoryAction = ""
+		mandatoryAction: ""
 	},
 	{
 		text: "",
@@ -59,23 +59,23 @@ var page = [
 				text: ""
 			}
 		],
-		mandatoryAction = "Luck"
+		mandatoryAction: "Luck"
 	},
-	{
-		text: "",
-		opponents: [],
-		options: [
-			{
-				nextPage: ,
-				text: ""
-			},
-			{
-				nextPage: ,
-				text: ""
-			}
-		],
-		mandatoryAction = ""
-	},
+	// {
+	// 	text: "",
+	// 	opponents: [],
+	// 	options: [
+	// 		{
+	// 			nextPage: ,
+	// 			text: ""
+	// 		},
+	// 		{
+	// 			nextPage: ,
+	// 			text: ""
+	// 		}
+	// 	],
+	// 	mandatoryAction: ""
+	// },
 	{
 		text: "You find yourself in a north-south corridor. To the north the passage turns east some metres ahead. To the south, the passageway also turns east.",
 		opponents: [],
@@ -89,7 +89,7 @@ var page = [
 				text: "Go south"
 			}
 		],
-		mandatoryAction = ""
+		mandatoryAction: ""
 	},
 	{
 		text: "A rough timber doorway is on the east wall of the passage. You listen at the door and can hear a jolly sort of humming sound.",
@@ -104,7 +104,7 @@ var page = [
 				text: "Continue northwards"
 			}
 		],
-		mandatoryAction = ""
+		mandatoryAction: ""
 	},
 	{
 		text: "The large solid door has no handle. You charge it, but to no avail. The door is not going to budge. You decide to give up and go through the opening you passed in the east-west passageway some way back.",
@@ -115,7 +115,7 @@ var page = [
 				text: "Continue"
 			}
 		],
-		mandatoryAction = ""
+		mandatoryAction: ""
 	},
 	{
 		text: "You are on the north bank of a fast-flowing river in a large underground cavern.",
@@ -126,7 +126,7 @@ var page = [
 				text: "Continue"
 			}
 		],
-		mandatoryAction = ""
+		mandatoryAction: ""
 	},
 	{
 		text: "The passage ahead ends at a sturdy door. You listen but hear nothing. You try the handle, it turns, and you enter the room. As you look around you hear a loud cry from behind you and swing round to see a wild man leaping towards you wielding a large battle axe. He is a mad BARBARIAN and you must fight him!",
@@ -148,36 +148,36 @@ var page = [
 				text: "Escape"
 			}
 		],
-		mandatoryAction = ""
-	},
-	{
-		text: "",
-		opponents: [],
-		options: [
-			{
-				nextPage: ,
-				text: ""
-			},
-			{
-				nextPage: ,
-				text: ""
-			}
-		],
-		mandatoryAction = ""
-	},
-	{
-		text: "",
-		opponents: [],
-		options: [
-			{
-				nextPage: ,
-				text: ""
-			},
-			{
-				nextPage: ,
-				text: ""
-			}
-		],
-		mandatoryAction = ""
+		mandatoryAction: ""
+	// },
+	// {
+	// 	text: "",
+	// 	opponents: [],
+	// 	options: [
+	// 		{
+	// 			nextPage: ,
+	// 			text: ""
+	// 		},
+	// 		{
+	// 			nextPage: ,
+	// 			text: ""
+	// 		}
+	// 	],
+	// 	mandatoryAction: ""
+	// },
+	// {
+	// 	text: "",
+	// 	opponents: [],
+	// 	options: [
+	// 		{
+	// 			nextPage: ,
+	// 			text: ""
+	// 		},
+	// 		{
+	// 			nextPage: ,
+	// 			text: ""
+	// 		}
+	// 	],
+	// 	mandatoryAction: ""
 	}
 ];
